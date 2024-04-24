@@ -11,6 +11,9 @@
 		524B7A7D2BD8B205008BF116 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B7A7C2BD8B205008BF116 /* ContentView.swift */; };
 		524B7A7F2BD8B206008BF116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524B7A7E2BD8B206008BF116 /* Assets.xcassets */; };
 		524B7A822BD8B206008BF116 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524B7A812BD8B206008BF116 /* Preview Assets.xcassets */; };
+		524B7A8D2BD8B34E008BF116 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 524B7A8C2BD8B34E008BF116 /* GoogleGenerativeAI */; };
+		524B7A902BD8B3CD008BF116 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B7A8F2BD8B3CD008BF116 /* Constant.swift */; };
+		524B7A922BD8B535008BF116 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B7A912BD8B535008BF116 /* PlaceModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,8 @@
 		524B7A7C2BD8B205008BF116 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		524B7A7E2BD8B206008BF116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		524B7A812BD8B206008BF116 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		524B7A8F2BD8B3CD008BF116 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		524B7A912BD8B535008BF116 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				524B7A8D2BD8B34E008BF116 /* GoogleGenerativeAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +57,10 @@
 		524B7A792BD8B205008BF116 /* PlacesAI */ = {
 			isa = PBXGroup;
 			children = (
-				524B7A7A2BD8B205008BF116 /* PlacesAIApp.swift */,
-				524B7A7C2BD8B205008BF116 /* ContentView.swift */,
-				524B7A7E2BD8B206008BF116 /* Assets.xcassets */,
+				524B7A8E2BD8B3B2008BF116 /* Model */,
+				524B7A882BD8B216008BF116 /* App */,
+				524B7A892BD8B23A008BF116 /* View */,
+				524B7A8A2BD8B240008BF116 /* Resources */,
 				524B7A802BD8B206008BF116 /* Preview Content */,
 			);
 			path = PlacesAI;
@@ -65,6 +72,39 @@
 				524B7A812BD8B206008BF116 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		524B7A882BD8B216008BF116 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				524B7A7A2BD8B205008BF116 /* PlacesAIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		524B7A892BD8B23A008BF116 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				524B7A7C2BD8B205008BF116 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		524B7A8A2BD8B240008BF116 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				524B7A7E2BD8B206008BF116 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		524B7A8E2BD8B3B2008BF116 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				524B7A8F2BD8B3CD008BF116 /* Constant.swift */,
+				524B7A912BD8B535008BF116 /* PlaceModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +123,9 @@
 			dependencies = (
 			);
 			name = PlacesAI;
+			packageProductDependencies = (
+				524B7A8C2BD8B34E008BF116 /* GoogleGenerativeAI */,
+			);
 			productName = PlacesAI;
 			productReference = 524B7A772BD8B205008BF116 /* PlacesAI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +154,9 @@
 				Base,
 			);
 			mainGroup = 524B7A6E2BD8B205008BF116;
+			packageReferences = (
+				524B7A8B2BD8B34E008BF116 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+			);
 			productRefGroup = 524B7A782BD8B205008BF116 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +184,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				524B7A7D2BD8B205008BF116 /* ContentView.swift in Sources */,
+				524B7A922BD8B535008BF116 /* PlaceModel.swift in Sources */,
 				524B7A7B2BD8B205008BF116 /* PlacesAIApp.swift in Sources */,
+				524B7A902BD8B3CD008BF116 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +390,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		524B7A8B2BD8B34E008BF116 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google-gemini/generative-ai-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		524B7A8C2BD8B34E008BF116 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 524B7A8B2BD8B34E008BF116 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 524B7A6F2BD8B205008BF116 /* Project object */;
 }
