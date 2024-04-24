@@ -14,6 +14,8 @@
 		524B7A8D2BD8B34E008BF116 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 524B7A8C2BD8B34E008BF116 /* GoogleGenerativeAI */; };
 		524B7A902BD8B3CD008BF116 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B7A8F2BD8B3CD008BF116 /* Constant.swift */; };
 		524B7A922BD8B535008BF116 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B7A912BD8B535008BF116 /* PlaceModel.swift */; };
+		524B7A952BD8B785008BF116 /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B7A942BD8B785008BF116 /* PlaceViewModel.swift */; };
+		524B7A972BD8BA80008BF116 /* PlaceRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B7A962BD8BA80008BF116 /* PlaceRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		524B7A812BD8B206008BF116 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		524B7A8F2BD8B3CD008BF116 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		524B7A912BD8B535008BF116 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		524B7A942BD8B785008BF116 /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
+		524B7A962BD8BA80008BF116 /* PlaceRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 		524B7A792BD8B205008BF116 /* PlacesAI */ = {
 			isa = PBXGroup;
 			children = (
+				524B7A932BD8B759008BF116 /* ViewModel */,
 				524B7A8E2BD8B3B2008BF116 /* Model */,
 				524B7A882BD8B216008BF116 /* App */,
 				524B7A892BD8B23A008BF116 /* View */,
@@ -85,6 +90,7 @@
 		524B7A892BD8B23A008BF116 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				524B7A982BD8BC37008BF116 /* Component */,
 				524B7A7C2BD8B205008BF116 /* ContentView.swift */,
 			);
 			path = View;
@@ -105,6 +111,22 @@
 				524B7A912BD8B535008BF116 /* PlaceModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		524B7A932BD8B759008BF116 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				524B7A942BD8B785008BF116 /* PlaceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		524B7A982BD8BC37008BF116 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				524B7A962BD8BA80008BF116 /* PlaceRowView.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +206,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				524B7A7D2BD8B205008BF116 /* ContentView.swift in Sources */,
+				524B7A972BD8BA80008BF116 /* PlaceRowView.swift in Sources */,
+				524B7A952BD8B785008BF116 /* PlaceViewModel.swift in Sources */,
 				524B7A922BD8B535008BF116 /* PlaceModel.swift in Sources */,
 				524B7A7B2BD8B205008BF116 /* PlacesAIApp.swift in Sources */,
 				524B7A902BD8B3CD008BF116 /* Constant.swift in Sources */,

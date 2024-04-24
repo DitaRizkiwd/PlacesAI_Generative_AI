@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var placevm = PlaceViewModel()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack{
+            List{
+                ForEach(placevm.place, id:\.self){
+                    item in PlaceRowView(place: item)
+                }
+            }
+            .navigationTitle("Palembang")
+            .overlay{
+                placevm.place.isEmpty ? ProgressView() : nil
+            }
+            .task {
+                await placevm.getPlaces()
+            }
+            .refreshable {
+                await placevm.getPlaces()
+            }
         }
-        .padding()
     }
 }
 

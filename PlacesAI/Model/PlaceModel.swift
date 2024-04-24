@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct PlaceModel : Codable {
+struct PlaceModel : Codable, Hashable{
     var place: String
     var activity: String
     var price: String
