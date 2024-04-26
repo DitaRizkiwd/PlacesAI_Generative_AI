@@ -20,11 +20,21 @@ struct ContentView: View {
             .overlay{
                 placevm.place.isEmpty ? ProgressView() : nil
             }
-            .task {
-                await placevm.getPlaces()
-            }
+//            .task {
+//                await placevm.getPlaces()
+//            }
             .refreshable {
                 await placevm.getPlaces()
+            }
+            
+            //menngkap perubahan dari isReady
+            .onChange(of: placevm.isReady) { oldValue, newValue in
+                if newValue{
+                    Task{
+                        await placevm.getPlaces()
+                    }
+                    
+                }
             }
         }
     }

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D1EE89A2-EB3A-4F9D-BD6D-7CD1EC4D43EA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "893A0CAA-A0EA-4DB9-930B-CD34C41E16EC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlacesAI/Model/Constant.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "Constant"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "893A0CAA-A0EA-4DB9-930B-CD34C41E16EC - 8000d0f5a24a6892"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "one-time initialization function for apiKey"
+                  moduleName = "PlacesAI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookpro/Documents/learningSwift/PlacesAI/PlacesAI/Model/Constant.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10">
+               </Location>
+               <Location
+                  uuid = "893A0CAA-A0EA-4DB9-930B-CD34C41E16EC - d7deb9d487bc2625"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlacesAI.Constant.apiKey.unsafeMutableAddressor : Swift.String"
+                  moduleName = "PlacesAI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookpro/Documents/learningSwift/PlacesAI/PlacesAI/Model/Constant.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
