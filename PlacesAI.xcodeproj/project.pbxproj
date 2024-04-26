@@ -69,8 +69,8 @@
 		524B7A792BD8B205008BF116 /* PlacesAI */ = {
 			isa = PBXGroup;
 			children = (
-				52D590092BDB61580023573E /* Config */,
 				52D590072BDB605E0023573E /* GoogleService-Info.plist */,
+				52D590092BDB61580023573E /* Config */,
 				524B7A932BD8B759008BF116 /* ViewModel */,
 				524B7A8E2BD8B3B2008BF116 /* Model */,
 				524B7A882BD8B216008BF116 /* App */,
